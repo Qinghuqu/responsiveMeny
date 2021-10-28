@@ -1,0 +1,81 @@
+body
+{
+  margin: 0;
+  font-family: 'Source Sans Pro', Helvetica, Trebuchet MS;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+
+.navContainer
+{
+  background-color: #484848;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 0.6rem;
+}
+
+.navMenu
+{
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.currentPageName
+{
+  color: #FFFFFF;
+  cursor: grab;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.navList
+{
+  list-style-type: none;
+  margin: 0;
+}
+
+.navListItem
+{
+  display: inline-block;
+  margin-right: 1rem;
+  color: #FFFFFF;
+}
+
+.navListItemIcon
+{
+  vertical-align: middle;
+  margin-right: 0.3rem;
+}
+
+.currentItem
+{
+  color: #FBC531;
+  cursor: default;
+}
+
+a
+{
+  text-decoration: none;
+  color: inherit;
+  transition: 0.5s;
+}
+
+a:hover
+{
+  color: #b3b3b3;
+}
+
+.content
+{
+  width: 100vw;
+  height: 60vh;
+  padding-top: 5rem;
+  font-size: 5rem;
+}
