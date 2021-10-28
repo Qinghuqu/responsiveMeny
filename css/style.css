@@ -1,3 +1,8 @@
+*
+{
+  box-sizing: border-box;
+}
+
 body
 {
   margin: 0;
@@ -79,3 +84,5 @@ a:hover
   padding-top: 5rem;
   font-size: 5rem;
 }
+
+@media screen and (min-width: )
