@@ -1,44 +1,37 @@
-*
-{
-  box-sizing: border-box;
-}
-
 body
 {
   margin: 0;
+  font-size: 0.8rem;
   font-family: 'Source Sans Pro', Helvetica, Trebuchet MS;
   text-align: center;
-  font-size: 0.8rem;
 }
 
 
 .navContainer
 {
-  background-color: #484848;
-  width: 100vw;
   display: flex;
   justify-content: center;
   overflow: visible;
+  width: 100vw;
   padding-top: 0.6rem;
+  background-color: #484848;
 }
 
 .navMenu
 {
-  width: 100%;
-  max-width: 1000px;
   display: block;
+  width: 100%;
   padding: 0;
-  padding-bottom: 0rem;
   color: #FFFFFF;
 }
 
 
 .menuButtonContainer
 {
-  display: inline-block;
   position: absolute;
-  left: 1rem;
   top: 1rem;
+  left: 1rem;
+  display: inline-block;
 }
 
 .menuButton
@@ -54,13 +47,13 @@ body
 
 .currentPageName
 {
-  display: inline-block;
   position: relative;
   left: 50%;
+  display: inline-block;
   transform: translateX(-50%);
-  cursor: grab;
   margin: 0;
-  padding-right: 1rem;
+  margin-right: 1rem;
+  cursor: grab;
   text-transform: uppercase;
 }
 
@@ -68,55 +61,52 @@ body
 .navList
 {
   display: block;
-  list-style-type: none;
+  overflow: hidden;
+  transition: 1s;
   margin: 0;
   margin-top: 0.6rem;
   padding: 0;
   width: 100vw;
-  background-color: #e6e6e6;
-  font-size: 2rem;
   max-height: 0;
-  overflow: hidden;
-  transition: 1s;
-  /*display: none;*/
+  background-color: #e6e6e6;
+  list-style-type: none;
+  font-size: 2rem;
 }
 
 .navListItem
 {
-  display: block;
-  margin-left: 0;
   color: #333333;
 }
 
 .navListItem:hover
 {
-  color: #ffffff;
   background-color: #b3b3b3;
+  color: #ffffff;
 }
 
 .navListItemIcon
 {
-  vertical-align: middle;
   margin-right: 0.3rem;
+  vertical-align: middle;
 }
+
 
 .currentItem
 {
-  color: #FBC531;
   cursor: default;
+  color: #FBC531;
 }
 
 .currentItem:hover
 {
-  color: #FBC531;
   background-color: #e6e6e6;
+  color: #FBC531;
 }
 
 a
 {
   text-decoration: none;
   color: inherit;
-  transition: 0.5s;
 }
 
 
@@ -141,8 +131,9 @@ a
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    max-width: 1000px;
   }
 
   .menuButtonContainer
@@ -155,20 +146,35 @@ a
     position: static;
     left: 0;
     transform: none;
+    margin-right: 0;
   }
 
   .navList
   {
-    display: block;
-    list-style-type: none;
+    display: inline-block;
+    margin-top: 0;
+    width: auto;
+    max-height: 100vh;
     background-color: #484848;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    list-style-type: none;
   }
 
   .navListItem
   {
     display: inline-block;
     margin-right: 1rem;
+    color: #FFFFFF;
+  }
+
+  .currentItem
+  {
+    color: #FBC531;
+  }
+
+  a
+  {
+    transition: 0.5s;
   }
 
   a:hover
@@ -176,4 +182,8 @@ a
     color: #b3b3b3;
   }
 
+  .navListItem:hover
+  {
+    background-color: inherit;
+  }
 }

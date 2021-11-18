@@ -10,11 +10,17 @@
   <body>
     <div class="navContainer">
 
-      <nav class="navMenu">
+      <nav id="navMenu" class="navMenu">
 
-        <h1 class="currentPageName"><i class="fa fa-graduation-cap"></i>&nbsp;Info</h1>
+        <div class="menuButtonContainer">
+          <i id="menuButton" class="menuButton fa fa-bars"></i>
+        </div>
 
-        <ul class="navList">
+        <h1 class="currentPageName">
+          <i class="fa fa-graduation-cap"></i>&nbsp;Info
+        </h1>
+
+        <ul id="navList" class="navList">
           <li class="navListItem">
             <a href="../"><i class="navListItemIcon fa fa-home"></i>Start</a>
 	        </li>
@@ -40,6 +46,8 @@
     </div>
 
     <div class="content">Info</div>
+
+    <script src="../js/script.js"></script>
 
   </body>
 </html>
